@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>hello world</p>
+<button onclick="Eswitch('on')"> trun on </button>
+<img  alt="">
+<button onclick="Eswitch('off')">trun off</button>
+
+<script>
+    const img = document.querySelector('img');
+    function Eswitch(action){
+        if(action ==='on'){
+            img.setAttribute('src','https:www.w3schools.com/js/pic_bulbon.gif')
+            console.log('turn img')
+        }
+        if(action === 'off'){
+            img.setAttribute('src','https:www.w3schools.com/js/pic_bulboff.gif')
+            console.log('off img')
+        }
+    }
+</script>
+</body>
+</html>
